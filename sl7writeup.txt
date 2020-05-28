@@ -1,0 +1,37 @@
+->JSeasy1:
+inspect element
+open network
+check response
+check javascript code for the creds
+now put the creds to get the flag
+admin:SeCRET213#_T
+
+->A1:
+open burpsuite
+send request: user=%0Acat%20%2fflag.txt in repeater (url encoding in command injection)
+check response for the flag in repeater
+put the flag
+
+->Networkf:
+download the capture file
+open the capture file using wireshark
+follow the tcp stream
+check the stream for the flag
+
+->Ground:
+ground means base
+so try base32, base64 encoding...etc
+when you decode using base32, you'll get the flag
+
+->Fuc:
+the title itself is a hint
+brainfcuk language is an encoding scheme
+use any online brainfcuk decoder to get the flag
+
+->CEncode:
+open the url with port using netcat
+you will see a custom encoding scheme
+now put normal values like a,b,c,d...etc to get the encoded values of all the alphabets, numbers and special characters
+now decode the given flag using the recently computed encoded letters of each alphabets
+
+
